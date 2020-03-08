@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="Bank">
     <h1>Konto do opłat</h1>
-    <div><label>Nazwa operatora:</label> {{bank.nazwa}}}</div>
-    <div><label>Numer konta:</label> {{bank.konto}}}</div>
+    <div><label>Nazwa operatora:</label> {{bank.nazwa}}</div>
+    <div><label>Numer konta:</label> {{bank.konto}}</div>
   </div>
 
   </template>
@@ -30,3 +30,17 @@
     }
   }
 </script>
+
+<style type="sass" scoped>
+  .Bank {
+    width: 40%;
+    margin: auto;
+  }
+  
+  .Bank label {
+    width: 200px;
+    font-weight: bold;
+    
+
+  }
+</style>

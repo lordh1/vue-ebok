@@ -1,20 +1,20 @@
 <template>
-  <div>
+  <div class="Contact">
     <h1>Moje dane kontaktowe (do kontaktu ze strony Operatora)</h1>
     <div>
-      <label>telefon 1</label>
+      <label>Telefon 1 </label>
       <input type="text" v-model="contact.tel1" />
     </div>
     <div>
-      <label>telefon 2</label>
+      <label>Telefon 2 </label>
       <input type="text" v-model="contact.tel2" />
     </div>
     <div>
-      <label>email</label>
+      <label>Email </label>
       <input type="text" v-model="contact.emil" />
     </div>
     <div>
-      <button @click="submit">Zapisz</button>
+      <button @click="submit">ZAPISZ</button>
     </div>
   </div>
 </template>
@@ -48,6 +48,29 @@
   }
 </script>
 
-<style scoped>
+<style type="sass" scoped>
+  .Contact {
+    width: 40%;
+    margin: auto;
+  
+  }
 
+  .Contact label {
+    line-height: 70px;
+    display: inline-block;
+    width: 100px;
+  }   
+
+  .Contact button {
+    padding: 10px 20px;
+    background-color: #2929df;
+    color: white;
+    font-weight: bold;
+  }
+
+  .Contact input{
+    border: 0;
+    border-bottom: 2px solid #5454a8;
+    outline: none;
+  }
 </style>

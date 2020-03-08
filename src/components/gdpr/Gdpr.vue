@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="Rodo">
     <h1>Informacja RODO</h1>
     <div style={padding}>Jako {{gdpr.name}}, w świetle przepisów jesteśmy, administratorem Państwa danych osobowych. Oznacza to, że odpowiadamy za ich wykorzystanie w sposób bezpieczny, zgodny z umową oraz obowiązującymi przepisami.</div>
     <div style={padding}>Proszę kliknąć następujący link aby przeczytać treść komunikatu <a :href="'/rodo-' + gdpr.company + '.pdf'" target='_blank'>TREŚĆ KOMUNIKATU</a></div>
@@ -34,3 +34,24 @@
     }
   }
 </script>
+
+<style type="sass" scoped>
+  .Rodo {
+    margin: auto;
+  }
+
+  .Rodo a {
+    display: block;
+    margin: 20px;
+    }
+
+    .Rodo button {
+      padding: 10px 20px;
+    background-color: #2929df;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    }
+  
+
+  </style>

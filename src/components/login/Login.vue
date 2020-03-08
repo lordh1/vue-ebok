@@ -1,24 +1,30 @@
 <template>
-  <div>
+  <div class="Login">
     <h1>Zaloguj się</h1>
     <form>
-      <label>Login</label>
-      <input
-        type="text"
-        v-model="id"
-        required
-      >
-      <label>Hasło</label>
-      <input
-        type="password"
-        v-model="password"
-        required
-      >
-      <button
-        @click="submit"
-      >
-        OK
-      </button>
+      <div>
+        <label>Login</label>
+        <input
+          type="text"
+          v-model="id"
+          required
+        >
+      </div>
+      <div>
+        <label>Hasło</label>
+        <input
+          type="password"
+          v-model="password"
+          required
+        >
+      </div>
+      <div>
+        <button
+          @click="submit"
+        >
+          Zaloguj
+        </button>
+      </div>
     </form>
   </div>
 </template>
@@ -48,3 +54,31 @@
     }
   }
 </script>
+
+<style type="sass" scoped>
+  .Login {
+    width: 40%;
+    margin: auto;
+  
+  }
+
+  .Login label {
+    line-height: 70px;
+    display: inline-block;
+    width: 100px;
+  }   
+
+  .Login button {
+    padding: 10px 20px;
+    background-color: #2929df;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .Login input{
+    border: 0;
+    border-bottom: 2px solid #5454a8;
+    outline: none;
+  }
+</style>
