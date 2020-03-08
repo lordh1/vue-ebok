@@ -55,30 +55,33 @@
   }
 </script>
 
-<style type="sass" scoped>
+<style lang="scss" scoped>
+@import "../../scss/vars.scss";
+
   .Login {
-    width: 40%;
+    width: $box-width;
     margin: auto;
-  
+
+    & label {
+      line-height: 70px;
+      display: inline-block;
+      width: 100px;
+    }   
+
+    & button {
+      padding: 10px 20px;
+      background-color: $button-color;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    & input {
+      border: 0;
+      border-bottom: 2px solid $button-color;
+      outline: none;
+    }
   }
 
-  .Login label {
-    line-height: 70px;
-    display: inline-block;
-    width: 100px;
-  }   
 
-  .Login button {
-    padding: 10px 20px;
-    background-color: #2929df;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .Login input{
-    border: 0;
-    border-bottom: 2px solid #5454a8;
-    outline: none;
-  }
 </style>

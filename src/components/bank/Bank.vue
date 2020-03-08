@@ -32,8 +32,10 @@
 </script>
 
 <style lang="scss" scoped>
+@import "../../scss/vars.scss";
+
   .Bank {
-    width: 40%;
+    width: $box-width;
     margin: auto;
 
     & label {

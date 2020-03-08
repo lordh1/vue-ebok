@@ -35,23 +35,24 @@
   }
 </script>
 
-<style type="sass" scoped>
+<style lang="scss" scoped>
+  @import "../../scss/vars.scss";
+
   .Rodo {
     margin: auto;
-  }
-
-  .Rodo a {
-    display: block;
-    margin: 20px;
+  
+    & a {
+      display: block;
+      margin: 20px;
     }
 
-    .Rodo button {
+    & button {
       padding: 10px 20px;
-    background-color: #2929df;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+      background-color: $button-color;
+      color: $text-color;
+      font-weight: bold;
+      cursor: pointer;
     }
   
-
+  }
   </style>

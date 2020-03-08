@@ -52,7 +52,7 @@
   @import "../../scss/vars.scss";
 
   .Contact {
-    width: 40%;
+    width: $box-width;
     margin: auto;
 
     & label {

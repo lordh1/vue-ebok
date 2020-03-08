@@ -1,5 +1,5 @@
 <template>
-  <div class="Faktury">
+  <div class="Invoices">
     <h1>Moje faktury</h1>
     <div
       v-for="(item, i) in invoices"
@@ -55,18 +55,18 @@
   }
 </script>
 
-<style type="sass" scoped>
-  .Faktury {
+<style lang="scss" scoped>
+@import "../../scss/vars.scss";
+
+  .Invoices {
     font-weight: bold;
     line-height: 60px;
     cursor: pointer;
-    width: 40%;
+    width: $box-width;
     margin: auto;
+    
+    & div:hover {
+        background-color: $box-hover-color;  
+    }
   }
-  
-
-  .Faktury div:hover {
-    background-color: #8c9fa0;  
-  }
-
 </style>
