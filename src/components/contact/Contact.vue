@@ -4,7 +4,7 @@
     <div>
       <span>telefon 1</span>
       <input type="text" v-model="contact.tel1" />
-      </div>
+    </div>
     <div>
       <span>telefon 2</span>
       <input type="text" v-model="contact.tel2" />
