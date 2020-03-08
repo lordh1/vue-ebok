@@ -1,38 +1,14 @@
 <template>
-  <v-container>
-    <v-row
-      align="center"
-      justify="center"
+  <div>
+    <h1>Moje faktury</h1>
+    <div
+      v-for="(item, i) in invoices"
+      :key="i"
+      @click="download(item.id)"
     >
-      <v-col
-        cols="12"
-        sm="8"
-        md="4">
-        <v-card class="elevation-12">
-          <v-toolbar
-            color="primary"
-            dark
-            flat
-          >
-            <v-toolbar-title>Moje faktury</v-toolbar-title>
-            <v-spacer />
-          </v-toolbar>
-          <v-list dense>
-            <v-list-item-group color="primary">
-              <v-list-item
-                v-for="(item, i) in invoices"
-                :key="i"
-              >
-                <v-list-item-content>
-                  <v-list-item-title v-text="item.numer" @click="download(item.id)"></v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list-item-group>
-          </v-list>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+      {{item.numer}}
+    </div>
+  </div>
 </template>
 
 <script>

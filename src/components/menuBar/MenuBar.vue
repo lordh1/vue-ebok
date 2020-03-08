@@ -6,7 +6,7 @@
       </div>
     </div>
 
-    <div @click="doLogout" v-show="authenticated" v-on="on">
+    <div @click="doLogout" v-show="authenticated">
       Logout
     </div>
   </div>
