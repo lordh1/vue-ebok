@@ -48,29 +48,30 @@
   }
 </script>
 
-<style type="sass" scoped>
+<style lang="scss" scoped>
+  @import "../../scss/vars.scss";
+
   .Contact {
     width: 40%;
     margin: auto;
-  
-  }
 
-  .Contact label {
-    line-height: 70px;
-    display: inline-block;
-    width: 100px;
-  }   
+    & label {
+      line-height: 70px;
+      display: inline-block;
+      width: 100px;
+    }
 
-  .Contact button {
-    padding: 10px 20px;
-    background-color: #2929df;
-    color: white;
-    font-weight: bold;
-  }
+    & button {
+      padding: 10px 20px;
+      background-color: $button-color;
+      color: $text-color;
+      font-weight: bold;
+    }
 
-  .Contact input{
-    border: 0;
-    border-bottom: 2px solid #5454a8;
-    outline: none;
+    & input{
+      border: 0;
+      border-bottom: 2px solid $button-color;
+      outline: none;
+    }
   }
 </style>

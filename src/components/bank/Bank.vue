@@ -31,16 +31,14 @@
   }
 </script>
 
-<style type="sass" scoped>
+<style lang="scss" scoped>
   .Bank {
     width: 40%;
     margin: auto;
-  }
-  
-  .Bank label {
-    width: 200px;
-    font-weight: bold;
-    
 
+    & label {
+      width: 200px;
+      font-weight: bold;
+    }
   }
 </style>
