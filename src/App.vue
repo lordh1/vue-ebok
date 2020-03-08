@@ -1,10 +1,10 @@
 <template>
-  <v-app>
+  <div>
     <MenuBar />
-    <v-content>
+    <div>
       <router-view />
-    </v-content>
-  </v-app>
+    </div>
+  </div>
 </template>
 
 <script>

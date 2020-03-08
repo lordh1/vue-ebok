@@ -1,41 +1,14 @@
 <template>
-  <div class="MenuBar">
-    <v-app-bar
-      color="primary"
-      dense
-      dark
-    >
-      <v-menu
-        left
-        bottom
-      >
-        <template v-slot:activator="{ on }">
-          <v-btn icon v-on="on" v-show="authenticated">
-            <v-app-bar-nav-icon></v-app-bar-nav-icon>
-          </v-btn>
-        </template>
+  <div>
+    <div v-show="authenticated">
+      <div @click="goTo(item.path)" :key="key" v-for="(item, key) in routes">
+        {{item.name}}
+      </div>
+    </div>
 
-        <v-list v-show="authenticated">
-          <v-list-item @click="goTo(item.path)" :key="key" v-for="(item, key) in routes">
-            {{item.name}}
-          </v-list-item>
-        </v-list>
-      </v-menu>
-
-      <v-toolbar-title>EBOK</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-
-      <v-tooltip left>
-        <template v-slot:activator="{ on }">
-          <v-btn icon @click="doLogout" v-show="authenticated" v-on="on">
-            <v-icon>mdi-logout</v-icon>
-          </v-btn>
-        </template>
-        <span>Wyloguj się</span>
-      </v-tooltip>
-    </v-app-bar>
+    <div @click="doLogout" v-show="authenticated" v-on="on">
+      Logout
+    </div>
   </div>
 </template>
 

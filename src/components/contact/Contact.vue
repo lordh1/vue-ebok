@@ -1,58 +1,22 @@
 <template>
-  <v-container
-    fluid
-  >
-    <v-row
-      align="center"
-      justify="center"
-    >
-      <v-col
-        cols="12"
-        sm="8"
-        md="4"
-      >
-        <v-card class="elevation-12">
-          <v-toolbar
-            color="primary"
-            dark
-            flat
-          >
-            <v-toolbar-title>Moje dane kontaktowe (do kontaktu ze strony Operatora)</v-toolbar-title>
-            <v-spacer />
-          </v-toolbar>
-          <v-card-text>
-            <v-form>
-              <v-text-field
-                v-model="contact.tel1"
-                label="telefon 1"
-              ></v-text-field>
-
-              <v-text-field
-                v-model="contact.tel2"
-                label="telefon 2"
-              ></v-text-field>
-
-              <v-text-field
-                v-model="contact.email"
-                label="e-mail"
-              ></v-text-field>
-
-            </v-form>
-          </v-card-text>
-          <v-card-actions>
-            <v-spacer />
-            <v-btn
-              color="primary"
-              class="mr-4"
-              @click="submit"
-            >
-              Zapisz
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+  <div>
+    <h1>Moje dane kontaktowe (do kontaktu ze strony Operatora)</h1>
+    <div>
+      <span>telefon 1</span>
+      <input type="text" v-model="contact.tel1" />
+      </div>
+    <div>
+      <span>telefon 2</span>
+      <input type="text" v-model="contact.tel2" />
+      </div>
+    <div>
+      <span>email</span>
+      <input type="text" v-model="contact.emil" />
+    </div>
+    <div>
+      <button @click="submit">Zapisz</button>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -83,3 +47,7 @@
     }
   }
 </script>
+
+<style scoped>
+
+</style>
