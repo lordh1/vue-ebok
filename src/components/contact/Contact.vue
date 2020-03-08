@@ -2,15 +2,15 @@
   <div>
     <h1>Moje dane kontaktowe (do kontaktu ze strony Operatora)</h1>
     <div>
-      <span>telefon 1</span>
+      <label>telefon 1</label>
       <input type="text" v-model="contact.tel1" />
     </div>
     <div>
-      <span>telefon 2</span>
+      <label>telefon 2</label>
       <input type="text" v-model="contact.tel2" />
-      </div>
+    </div>
     <div>
-      <span>email</span>
+      <label>email</label>
       <input type="text" v-model="contact.emil" />
     </div>
     <div>
