@@ -1,31 +1,29 @@
 <template>
   <div class="Login">
     <h1>Zaloguj się</h1>
-    <form>
-      <div>
-        <label>Login</label>
-        <input
-          type="text"
-          v-model="id"
-          required
-        >
-      </div>
-      <div>
-        <label>Hasło</label>
-        <input
-          type="password"
-          v-model="password"
-          required
-        >
-      </div>
-      <div>
-        <button
-          @click="submit"
-        >
-          Zaloguj
-        </button>
-      </div>
-    </form>
+    <div>
+      <label>Login</label>
+      <input
+        type="text"
+        v-model="id"
+        required
+      >
+    </div>
+    <div>
+      <label>Hasło</label>
+      <input
+        type="password"
+        v-model="password"
+        required
+      >
+    </div>
+    <div>
+      <button
+        @click="submit"
+      >
+        Zaloguj
+      </button>
+    </div>
   </div>
 </template>
 
